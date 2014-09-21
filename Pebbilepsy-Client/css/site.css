@@ -1,0 +1,33 @@
+/* overwrites */
+body {
+	background: #f4e9e3;
+}
+h2 {
+	text-align: center;
+}
+.container {
+	margin-left: 10%;
+}
+.main-heading {
+	padding-top: 50px;
+}
+.main-heading p{
+	text-align: center;
+}
+
+#dashboard {
+	margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+	#dashboard svg { 
+		width: 100%;
+		overflow: hidden; 
+	}
+	h2 {
+		text-align: left;
+	}
+	.main-heading p { 
+		text-align: left;
+	}
+}

@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'nws', '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'nws', null ]
+5 verbose cache add name=undefined spec="nws" args=["nws",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'nws',
+6 verbose parsed url   path: 'nws',
+6 verbose parsed url   href: 'nws' }
+7 silly lockFile ae1cc29f-nws nws
+8 verbose lock nws /Users/ericdolan/.npm/ae1cc29f-nws.lock
+9 silly lockFile ae1cc29f-nws nws
+10 silly lockFile ae1cc29f-nws nws
+11 verbose addNamed [ 'nws', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 39bead1c-nws nws@
+14 verbose lock nws@ /Users/ericdolan/.npm/39bead1c-nws.lock
+15 silly addNameRange { name: 'nws', range: '*', hasData: false }
+16 verbose registry.get https://registry.npmjs.org/nws not expired, no request
+17 silly addNameRange number 2 { name: 'nws', range: '*', hasData: true }
+18 silly addNameRange versions [ 'nws',
+18 silly addNameRange   [ '0.1.1', '0.2.0', '0.2.1', '0.3.0', '0.3.1', '0.4.0', '0.5.0' ] ]
+19 verbose addNamed [ 'nws', '0.5.0' ]
+20 verbose addNamed [ '0.5.0', '0.5.0' ]
+21 silly lockFile 409b28af-nws-0-5-0 nws@0.5.0
+22 verbose lock nws@0.5.0 /Users/ericdolan/.npm/409b28af-nws-0-5-0.lock
+23 silly lockFile 409b28af-nws-0-5-0 nws@0.5.0
+24 silly lockFile 409b28af-nws-0-5-0 nws@0.5.0
+25 silly lockFile 39bead1c-nws nws@
+26 silly lockFile 39bead1c-nws nws@
+27 silly resolved [ { name: 'nws',
+27 silly resolved     description: 'Launch a node-powered static web server in the current working directory.',
+27 silly resolved     version: '0.5.0',
+27 silly resolved     author: { name: 'Kenneth Powers', email: 'mail@kenpowers.net' },
+27 silly resolved     contributors: [ [Object] ],
+27 silly resolved     dependencies: { optimist: '0.3.1', connect: '~2.7.3', open: '0.0.4' },
+27 silly resolved     repository: { type: 'git', url: 'git://github.com/KenPowers/nws' },
+27 silly resolved     bin: { nws: './bin/nws' },
+27 silly resolved     main: 'index',
+27 silly resolved     keywords: [ 'web', 'server', 'local', 'static' ],
+27 silly resolved     bugs: { url: 'https://github.com/KenPowers/nws/issues' },
+27 silly resolved     homepage: 'https://github.com/KenPowers/nws',
+27 silly resolved     _id: 'nws@0.5.0',
+27 silly resolved     dist:
+27 silly resolved      { shasum: '93b097b77dcb7ab40afcefe53aa0a80cf9b3db1e',
+27 silly resolved        tarball: 'http://registry.npmjs.org/nws/-/nws-0.5.0.tgz' },
+27 silly resolved     _from: 'nws@',
+27 silly resolved     _npmVersion: '1.3.21',
+27 silly resolved     _npmUser: { name: 'kenpowers', email: 'mail@kenpowers.net' },
+27 silly resolved     maintainers: [ [Object] ],
+27 silly resolved     directories: {},
+27 silly resolved     _shasum: '93b097b77dcb7ab40afcefe53aa0a80cf9b3db1e',
+27 silly resolved     _resolved: 'https://registry.npmjs.org/nws/-/nws-0.5.0.tgz',
+27 silly resolved     readme: 'ERROR: No README data found!' } ]
+28 info install nws@0.5.0 into /usr/local/lib
+29 info installOne nws@0.5.0
+30 verbose lib/node_modules/nws unbuild
+31 verbose tar unpack /Users/ericdolan/.npm/nws/0.5.0/package.tgz
+32 silly lockFile 1d609eed-r-usr-local-lib-node-modules-nws tar:///usr/local/lib/node_modules/nws
+33 verbose lock tar:///usr/local/lib/node_modules/nws /Users/ericdolan/.npm/1d609eed-r-usr-local-lib-node-modules-nws.lock
+34 silly lockFile 7a8a563d-cdolan-npm-nws-0-5-0-package-tgz tar:///Users/ericdolan/.npm/nws/0.5.0/package.tgz
+35 verbose lock tar:///Users/ericdolan/.npm/nws/0.5.0/package.tgz /Users/ericdolan/.npm/7a8a563d-cdolan-npm-nws-0-5-0-package-tgz.lock
+36 silly gunzTarPerm modes [ '755', '644' ]
+37 error Error: EACCES, mkdir '/usr/local/lib/node_modules/nws'
+37 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/nws']
+37 error   errno: 3,
+37 error   code: 'EACCES',
+37 error   path: '/usr/local/lib/node_modules/nws',
+37 error   fstream_type: 'Directory',
+37 error   fstream_path: '/usr/local/lib/node_modules/nws',
+37 error   fstream_class: 'DirWriter',
+37 error   fstream_stack:
+37 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+37 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+37 error      'Object.oncomplete (fs.js:107:15)' ] }
+38 error Please try running this command again as root/Administrator.
+39 error System Darwin 13.2.0
+40 error command "node" "/usr/local/bin/npm" "install" "nws" "-g"
+41 error cwd /Users/ericdolan/Desktop/epilepsy/Pebbilepsy-Client
+42 error node -v v0.10.32
+43 error npm -v 1.4.28
+44 error path /usr/local/lib/node_modules/nws
+45 error fstream_path /usr/local/lib/node_modules/nws
+46 error fstream_type Directory
+47 error fstream_class DirWriter
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/nws'
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+51 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+51 error fstream_stack Object.oncomplete (fs.js:107:15)
+52 verbose exit [ 3, true ]
