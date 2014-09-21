@@ -1,0 +1,7 @@
+{
+  "name": "htn-static",
+  "main": "app.js",
+  "dependencies": {
+    "nws": "0.5.0"
+  }
+}
